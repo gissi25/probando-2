@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda Karla - Tienda de Ropa Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rosa': '#f472b6',
+                        'rosa-oscuro': '#db2777',
+                        'negro': '#1f2937',
+                        'gris-claro': '#f9fafb'
+                    },
+                    fontFamily: {
+                        'serif': ['Cormorant Garamond', 'serif'],
+                        'sans': ['DM Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="font-sans text-negro bg-gris-claro">
+    <!-- Header y Navegación -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-rosa rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">MK</span>
+                    </div>
+                    <h1 class="text-2xl font-serif font-bold text-negro">Moda Karla</h1>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-negro hover:text-rosa font-medium transition-colors duration-300">Inicio</a>
+                    <a href="#catalogo" class="text-negro hover:text-rosa font-medium transition-colors duration-300">Catálogo</a>
+                    <a href="#nuevo" class="text-negro hover:text-rosa font-medium transition-colors duration-300">Nueva Colección</a>
+                    <a href="#ofertas" class="text-negro hover:text-rosa font-medium transition-colors duration-300">Ofertas</a>
+                </nav>
+                
+                <div class="flex items-center space-x-6">
+                    <button class="relative">
+                        <i class="fas fa-shopping-bag text-2xl text-negro hover:text-rosa transition-colors duration-300"></i>
+                        <span class="absolute -top-2 -right-2 bg-rosa text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+                    </button>
+                    <button class="md:hidden">
+                        <i class="fas fa-bars text-2xl text-negro"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-bg bg-cover bg-center min-h-screen flex items-center">
+        <div class="container mx-auto px-4 py-20">
+            <div class="max-w-2xl">
+                <h2 class="text-5xl md:text-7xl font-serif font-bold text-white mb-6">Elegancia en cada detalle</h2>
+                <p class="text-xl text-white mb-10 opacity-90">Descubre nuestra nueva colección primavera-verano 2024, diseñada para mujeres que buscan estilo, confort y sofisticación.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#catalogo" class="bg-rosa hover:bg-rosa-oscuro text-white font-medium py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg">Ver Colección</a>
+                    <a href="#ofertas" class="bg-transparent border-2 border-white text-white font-medium py-3 px-8 rounded-full transition-all duration-300 hover:bg-white hover:text-negro">Ofertas Especiales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Productos -->
+    <section id="catalogo" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif font-bold text-negro mb-4">Nuestro Catálogo</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Descubre las prendas más exclusivas de nuestra tienda, diseñadas con los mejores materiales y tendencias actuales.</p>
+            </div>
+            
+            <!-- Filtros de categorías -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="bg-rosa text-white font-medium py-2 px-6 rounded-full transition-all duration-300 hover:scale-105">Todos</button>
+                <button class="bg-gray-100 hover:bg-gray-200 text-negro font-medium py-2 px-6 rounded-full transition-all duration-300 hover:scale-105">Vestidos</button>
+                <button class="bg-gray-100 hover:bg-gray-200 text-negro font-medium py-2 px-6 rounded-full transition-all duration-300 hover:scale-105">Blusas</button>
+                <button class="bg-gray-100 hover:bg-gray-200 text-negro font-medium py-2 px-6 rounded-full transition-all duration-300 hover:scale-105">Pantalones</button>
+                <button class="bg-gray-100 hover:bg-gray-200 text-negro font-medium py-2 px-6 rounded-full transition-all duration-300 hover:scale-105">Abrigos</button>
+            </div>
+            
+            <!-- Grid de productos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Producto 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative overflow-hidden h-80">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" 
+                             alt="Vestido elegante negro" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <span class="absolute top-4 right-4 bg-rosa text-white text-sm font-medium py-1 px-3 rounded-full">Nuevo</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-serif font-bold text-negro">Vestido Elegante Negro</h3>
+                            <span class="text-2xl font-bold text-rosa">$89.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Vestido de fiesta con detalles en encaje y corte midi. Perfecto para ocasiones especiales.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Tallas: XS, S, M, L</span>
+                            <button class="bg-negro hover:bg-gray-800 text-white font-medium py-2 px-6 rounded-full transition-all duration-300 hover:scale-105">
+                                <i class="fas fa-shopping-bag mr-2"></i>Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative overflow-hidden h-80">
+                        <img src="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" 
+                             alt="Blusa de seda rosa" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-serif font-bold text-negro">Blusa de Seda Rosa</h3>
+                            <span class="text-2xl font-bold text-rosa">$49.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Blusa de seda natural con cuello barco y mangas abullonadas. Ideal para el día a día.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Tallas: S, M, L</span>
+                            <button class="bg-negro hover:bg-gray-800 text-white font-medium py-2 px-6 rounded-full transition-all duration-300 hover:scale-105">
+                                <i class="fas fa-shopping-bag mr-2"></i>Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative overflow-hidden h-80">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" 
+                             alt="Pantalón de vestir blanco" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <span class="absolute top-4 right-4 bg-red-500 text-white text-sm font-medium py-1 px-3 rounded-full">-20%</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-serif font-bold text-negro">Pantalón de Vestir Blanco</h3>
+                            <div>
+                                <span class="text-lg text-gray-400 line-through mr-2">$64.99</span>
+                                <span class="text-2xl font-bold text-rosa">$51.99</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">Pantalón de talle alto en lino y algodón. Corte recto y cómodo para oficina o eventos.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Tallas: 36, 38, 40, 42</span>
+                            <button class="bg-negro hover:bg-gray-800 text-white font-medium py-2 px-6 rounded-full transition-all duration-300 hover:scale-105">
+                                <i class="fas fa-shopping-bag mr-2"></i>Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative overflow-hidden h-80">
+                        <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" 
+                             alt="Abrigo camel elegante" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-serif font-bold text-negro">Abrigo Elegante Camel</h3>
+                            <span class="text-2xl font-bold text-rosa">$129.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Abrigo de lana y cachemira para invierno. Diseño clásico con corte entallado y solapas amplias.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Tallas: S, M, L, XL</span>
+                            <button class="bg-negro hover:bg-gray-800 text-white font-medium py-2 px-6 rounded-full transition-all duration-300 hover:scale-105">
+                                <i class="fas fa-shopping-bag mr-2"></i>Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative overflow-hidden h-80">
+                        <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=986&q=80" 
+                             alt="Falda plisada negra" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <span class="absolute top-4 right-4 bg-rosa text-white text-sm font-medium py-1 px-3 rounded-full">Nuevo</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-serif font-bold text-negro">Falda Plisada Negra</h3>
+                            <span class="text-2xl font-bold text-rosa">$59.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Falda midi plisada en poliéster de alta calidad. Cintura elástica para mayor comodidad.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Tallas: XS, S, M</span>
+                            <button class="bg-negro hover:bg-gray-800 text-white font-medium py-2 px-6 rounded-full transition-all duration-300 hover:scale-105">
+                                <i class="fas fa-shopping-bag mr-2"></i>Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="relative overflow-hidden h-80">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1036&q=80" 
+                             alt="Conjunto deportivo rosa" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-serif font-bold text-negro">Conjunto Deportivo Rosa</h3>
+                            <span class="text-2xl font-bold text-rosa">$74.99</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Set deportivo de dos piezas en tejido técnico transpirable. Perfecto para entrenamiento.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Tallas: S, M, L, XL</span>
+                            <button class="bg-negro hover:bg-gray-800 text-white font-medium py-2 px-6 rounded-full transition-all duration-300 hover:scale-105">
+                                <i class="fas fa-shopping-bag mr-2"></i>Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-rosa hover:bg-rosa-oscuro text-white font-medium py-3 px-10 rounded-full transition-all duration-300 hover:scale-105 shadow-lg">
+                    Ver Todos los Productos <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nueva Colección -->
+    <section id="nuevo" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <h2 class="text-4xl font-serif font-bold text-negro mb-6">Nueva Colección Primavera-Verano 2024</h2>
+                    <p class="text-lg text-gray-600 mb-8">Inspirada en los colores vibrantes de la naturaleza y las formas fluidas, nuestra nueva colección combina comodidad y estilo de manera única. Cada pieza está diseñada para realzar la belleza natural de la mujer moderna.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-rosa mr-3"></i>
+                            <span>Materiales sostenibles y de alta calidad</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-rosa mr-3"></i>
+                            <span>Cortes que favorecen todo tipo de cuerpos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-rosa mr-3"></i>
+                            <span>Colores inspirados en la paleta primaveral</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="inline-block bg-negro hover:bg-gray-800 text-white font-medium py-3 px-8 rounded-full transition-all duration-300 hover:scale-105">
+                        Explorar Colección <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="rounded-xl overflow-hidden shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" 
+                                 alt="Modelo con vestido floral" class="w-full h-64 object-cover">
+                        </div>
+                        <div class="rounded-xl overflow-hidden shadow-lg mt-8">
+                            <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80" 
+                                 alt="Modelo con conjunto playero" class="w-full h-64 object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ofertas Especiales -->
+    <section id="ofertas" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif font-bold text-negro mb-4">Ofertas Especiales</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Aprovecha nuestras promociones por tiempo limitado. Hasta 40% de descuento en seleccionados.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Oferta 1 -->
+                <div class="bg-gradient-to-r from-rosa to-rosa-oscuro rounded-2xl p-8 text-white shadow-xl">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <h3 class="text-2xl font-serif font-bold mb-2">Descuento de Primavera</h3>
+                            <p class="opacity-90">En toda la colección de vestidos</p>
+                        </div>
+                        <span class="text-4xl font-bold">-30%</span>
+                    </div>
+                    <p class="mb-6">Vestidos de día y noche con los mejores diseños de la temporada. Oferta válida hasta el 30 de abril.</p>
+                    <a href="#" class="inline-block bg-white text-rosa font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition-all duration-300">
+                        Aprovechar Oferta
+                    </a>
+                </div>
+                
+                <!-- Oferta 2 -->
+                <div class="bg-gradient-to-r from-negro to-gray-800 rounded-2xl p-8 text-white shadow-xl">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <h3 class="text-2xl font-serif font-bold mb-2">2x1 en Accesorios</h3>
+                            <p class="opacity-90">Bolsos, cinturones y pañuelos</p>
+                        </div>
+                        <span class="text-4xl font-bold">2x1</span>
+                    </div>
+                    <p class="mb-6">Complementa tu look con nuestros accesorios seleccionados. Llévate dos productos por el precio de uno.</p>
+                    <a href="#" class="inline-block bg-white text-negro font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition-all duration-300">
+                        Ver Accesorios
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-negro text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-10 h-10 bg-rosa rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">MK</span>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold">Moda Karla</h3>
+                    </div>
+                    <p class="text-gray-300 mb-6">Tienda de ropa online con las últimas tendencias en moda femenina. Calidad, estilo y elegancia en cada prenda.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-rosa transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-rosa transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-rosa transition-colors duration-300">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-serif font-bold mb-6">Enlaces Rápidos</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#inicio" class="text-gray-300 hover:text-rosa transition-colors duration-300">Inicio</a></li>
+                        <li><a href="#catalogo" class="text-gray-300 hover:text-rosa transition-colors duration-300">Catálogo</a></li>
+                        <li><a href="#nuevo" class="text-gray-300 hover:text-rosa transition-colors duration-300">Nueva Colección</a></li>
+                        <li><a href="#ofertas" class="text-gray-300 hover:text-rosa transition-colors duration-300">Ofertas</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-rosa transition-colors duration-300">Mi Cuenta</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-serif font-bold mb-6">Categorías</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-rosa transition-colors duration-300">Vestidos</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-rosa transition-colors duration-300">Blusas</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-rosa transition-colors duration-300">Pantalones</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-rosa transition-colors duration-300">Faldas</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-rosa transition-colors duration-300">Abrigos</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-rosa transition-colors duration-300">Accesorios</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-serif font-bold mb-6">Contacto</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-rosa mr-3 mt-1"></i>
+                            <span class="text-gray-300">Calle de la Moda 123, Madrid, España</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-rosa mr-3"></i>
+                            <span class="text-gray-300">+34 91 123 45 67</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-rosa mr-3"></i>
+                            <span class="text-gray-300">info@modakarla.com</span>
+                        </li>
+                    </ul>
+                    <div class="mt-8">
+                        <p class="text-gray-300 mb-3">Suscríbete a nuestro newsletter</p>
+                        <div class="flex">
+                            <input type="email" placeholder="Tu email" class="bg-gray-800 text-white py-3 px-4 rounded-l-lg w-full focus:outline-none">
+                            <button class="bg-rosa hover:bg-rosa-oscuro py-3 px-4 rounded-r-lg transition-colors duration-300">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Moda Karla. Todos los derechos reservados. | <a href="#" class="hover:text-rosa transition-colors duration-300">Política de privacidad</a> | <a href="#" class="hover:text-rosa transition-colors duration-300">Términos y condiciones</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante del carrito -->
+    <div class="fixed bottom-6 right-6 z-40">
+        <button class="bg-rosa hover:bg-rosa-oscuro text-white w-16 h-16 rounded-full shadow-xl flex items-center justify-center transition-all duration-300 hover:scale-110">
+            <i class="fas fa-shopping-bag text-2xl"></i>
+        </button>
+    </div>
+</body>
+</html>
