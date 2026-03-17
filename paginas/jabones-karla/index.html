@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabones Karla - Jabones Artesanales de Calidad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#8B5FBF',
+                        'secondary': '#FF6B8B',
+                        'accent': '#D4A5E5',
+                        'light': '#F8F0FF',
+                    },
+                    fontFamily: {
+                        'serif': ['Cormorant Garamond', 'serif'],
+                        'sans': ['DM Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(139, 95, 191, 0.7), rgba(139, 95, 191, 0.5)), url('https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+        }
+        .section-bg {
+            background-color: #F8F0FF;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Header y Navegación -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center mr-3">
+                        <i class="fas fa-soap text-white text-xl"></i>
+                    </div>
+                    <h1 class="text-2xl font-serif font-bold text-primary">Jabones Karla</h1>
+                </div>
+                
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#inicio" class="font-medium hover:text-primary transition-colors duration-300">Inicio</a></li>
+                        <li><a href="#historia" class="font-medium hover:text-primary transition-colors duration-300">Nuestra Historia</a></li>
+                        <li><a href="#productos" class="font-medium hover:text-primary transition-colors duration-300">Modelos</a></li>
+                        <li><a href="#aromas" class="font-medium hover:text-primary transition-colors duration-300">Aromas</a></li>
+                        <li><a href="#pagos" class="font-medium hover:text-primary transition-colors duration-300">Pagos</a></li>
+                        <li><a href="#contacto" class="font-medium hover:text-primary transition-colors duration-300">Contacto</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="md:hidden text-primary text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-bg bg-cover bg-center min-h-screen flex items-center pt-16">
+        <div class="container mx-auto px-4 py-20">
+            <div class="max-w-2xl text-white">
+                <h2 class="text-5xl md:text-6xl font-serif font-bold mb-6">Jabones Artesanales <span class="text-accent">Hechos con Amor</span></h2>
+                <p class="text-xl mb-8 opacity-90">Descubre nuestra colección exclusiva de jabones naturales, elaborados con ingredientes cuidadosamente seleccionados para cuidar tu piel y deleitar tus sentidos.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#productos" class="bg-secondary hover:bg-pink-600 text-white font-medium py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg">Ver Productos</a>
+                    <a href="#contacto" class="bg-transparent border-2 border-white hover:bg-white/20 text-white font-medium py-3 px-8 rounded-full transition-all duration-300 hover:scale-105">Contactar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Historia -->
+    <section id="historia" class="py-20 section-bg">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif font-bold text-primary mb-4">Nuestra Historia</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Conoce el viaje que nos llevó a crear Jabones Karla</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80" alt="Karla elaborando jabones artesanales" class="rounded-2xl shadow-xl w-full h-auto">
+                </div>
+                <div>
+                    <h3 class="text-3xl font-serif font-bold text-primary mb-6">De un sueño a una realidad</h3>
+                    <p class="text-lg mb-6">Todo comenzó en 2018 cuando Karla, apasionada por la cosmética natural, decidió crear su primer jabón artesanal en la cocina de su casa. Frustrada por los productos llenos de químicos que irritaban su piel sensible, se propuso crear alternativas naturales y efectivas.</p>
+                    <p class="text-lg mb-6">Lo que empezó como un hobby para regalar a familiares y amigos, pronto se convirtió en un emprendimiento reconocido por su calidad y dedicación. Hoy, cada jabón es elaborado con ingredientes 100% naturales, aceites esenciales puros y mucho cuidado.</p>
+                    <p class="text-lg font-medium text-secondary">"Cada jabón cuenta una historia de dedicación, amor por lo natural y compromiso con el bienestar."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Productos/Modelos -->
+    <section id="productos" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif font-bold text-primary mb-4">Nuestros Jabones</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Descubre nuestra exclusiva colección de jabones artesanales, cada uno con propiedades únicas para tu piel</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-light rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1556228578-9c360e1d8d34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80" alt="Jabón de Lavanda" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-serif font-bold text-primary mb-2">Jabón de Lavanda</h3>
+                        <p class="text-gray-600 mb-4">Relajante y calmante, perfecto para uso nocturno. Con aceites esenciales puros de lavanda y avena para pieles sensibles.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-secondary">$12.500</span>
+                            <button class="bg-primary hover:bg-purple-700 text-white font-medium py-2 px-6 rounded-full transition-all duration-300 hover:scale-105">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-light rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80" alt="Jabón de Carbón Activado" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-serif font-bold text-primary mb-2">Jabón de Carbón</h3>
+                        <p class="text-gray-600 mb-4">Desintoxicante y purificante, ideal para pieles mixtas y grasas. Elimina impurezas y reduce los poros dilatados.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-secondary">$14.000</span>
+                            <button class="bg-primary hover:bg-purple-700 text-white font-medium py-2 px-6 rounded-full transition-all duration-300 hover:scale-105">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-light rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80" alt="Jabón de Miel y Avena" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-serif font-bold text-primary mb-2">Jabón de Miel y Avena</h3>
+                        <p class="text-gray-600 mb-4">Hidratante y exfoliante suave, con propiedades antioxidantes. Perfecto para pieles secas y desvitalizadas.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-secondary">$13.500</span>
+                            <button class="bg-primary hover:bg-purple-700 text-white font-medium py-2 px-6 rounded-full transition-all duration-300 hover:scale-105">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contacto" class="inline-block bg-secondary hover:bg-pink-600 text-white font-medium py-3 px-10 rounded-full transition-all duration-300 hover:scale-105 shadow-lg">Ver Todos los Modelos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Aromas -->
+    <section id="aromas" class="py-20 section-bg">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif font-bold text-primary mb-4">Nuestros Aromas</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Sumérgete en una experiencia sensorial con nuestras fragancias naturales</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Aroma 1 -->
+                <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-spa text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-primary mb-2">Lavanda</h3>
+                    <p class="text-gray-600">Relajante y calmante, ideal para reducir el estrés y promover un sueño reparador.</p>
+                </div>
+                
+                <!-- Aroma 2 -->
+                <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 rounded-full bg-pink-100 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lemon text-secondary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-primary mb-2">Cítricos</h3>
+                    <p class="text-gray-600">Energizante y revitalizante, perfecto para comenzar el día con energía y positivismo.</p>
+                </div>
+                
+                <!-- Aroma 3 -->
+                <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-primary mb-2">Menta y Eucalipto</h3>
+                    <p class="text-gray-600">Refrescante y descongestionante, ideal para despejar las vías respiratorias.</p>
+                </div>
+                
+                <!-- Aroma 4 -->
+                <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 rounded-full bg-yellow-100 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-seedling text-secondary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-primary mb-2">Vainilla y Canela</h3>
+                    <p class="text-gray-600">Acolchado y reconfortante, crea una atmósfera cálida y acogedora en tu baño.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-gradient-to-r from-primary to-secondary rounded-2xl p-8 text-white text-center">
+                <h3 class="text-2xl font-serif font-bold mb-4">¿No encuentras tu aroma favorito?</h3>
+                <p class="mb-6 max-w-2xl mx-auto">Contáctanos para crear un jabón personalizado con la fragancia que más te guste. ¡Hacemos pedidos especiales!</p>
+                <a href="#contacto" class="inline-block bg-white text-primary hover:bg-gray-100 font-medium py-3 px-10 rounded-full transition-all duration-300 hover:scale-105 shadow-lg">Solicitar Personalizado</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Métodos de Pago -->
+    <section id="pagos" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif font-bold text-primary mb-4">Métodos de Pago</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Ofrecemos múltiples opciones para que tu compra sea fácil y segura</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <!-- Método 1 -->
+                <div class="border border-gray-200 rounded-xl p-6 text-center hover:border-primary transition-all duration-300">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fab fa-cc-visa"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Tarjetas de Crédito</h3>
+                    <p class="text-gray-600">Aceptamos todas las tarjetas principales. Hasta 6 cuotas sin interés.</p>
+                </div>
+                
+                <!-- Método 2 -->
+                <div class="border border-gray-200 rounded-xl p-6 text-center hover:border-primary transition-all duration-300">
+                    <div class="text-4xl text-secondary mb-4">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Transferencia Bancaria</h3>
+                    <p class="text-gray-600">10% de descuento al pagar por transferencia bancaria directa.</p>
+                </div>
+                
+                <!-- Método 3 -->
+                <div class="border border-gray-200 rounded-xl p-6 text-center hover:border-primary transition-all duration-300">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fab fa-paypal"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">PayPal</h3>
+                    <p class="text-gray-600">Pago seguro a través de PayPal para compras internacionales.</p>
+                </div>
+                
+                <!-- Método 4 -->
+                <div class="border border-gray-200 rounded-xl p-6 text-center hover:border-primary transition-all duration-300">
+                    <div class="text-4xl text-secondary mb-4">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Contra Entrega</h3>
+                    <p class="text-gray-600">Paga al recibir tu pedido en la puerta de tu casa (solo ciudad capital).</p>
+                </div>
+            </div>
+            
+            <div class="bg-light rounded-2xl p-8">
+                <h3 class="text-2xl font-serif font-bold text-primary mb-6 text-center">Política de Envíos</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="text-3xl text-primary mb-2">🚚</div>
+                        <h4 class="font-bold text-lg mb-2">Envío Express</h4>
+                        <p class="text-gray-600">Entrega en 24-48 horas en ciudad capital. Costo: $5.000</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl text-secondary mb-2">📦</div>
+                        <h4 class="font-bold text-lg mb-2">Envío Nacional</h4>
+                        <p class="text-gray-600">Entrega en 3-5 días a todo el país. Costo: $8.000</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl text-primary mb-2">🎁</div>
+                        <h4 class="font-bold text-lg mb-2">Envío Gratis</h4>
+                        <p class="text-gray-600">Para compras superiores a $50.000 en ciudad capital.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="bg-primary text-white pt-12 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Columna 1 -->
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-3">
+                            <i class="fas fa-soap text-primary text-2xl"></i>
+                        </div>
+                        <h2 class="text-2xl font-serif font-bold">Jabones Karla</h2>
+                    </div>
+                    <p class="mb-6 opacity-90">Jabones artesanales elaborados con ingredientes naturales, amor y dedicación para cuidar tu piel y deleitar tus sentidos.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-secondary transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-secondary transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-secondary transition-colors duration-300">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-secondary transition-colors duration-300">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Columna 2 -->
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-6">Enlaces Rápidos</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#inicio" class="opacity-90 hover:text-accent transition-colors duration-300">Inicio</a></li>
+                        <li><a href="#historia" class="opacity-90 hover:text-accent transition-colors duration-300">Nuestra Historia</a></li>
+                        <li><a href="#productos" class="opacity-90 hover:text-accent transition-colors duration-300">Modelos de Jabones</a></li>
+                        <li><a href="#aromas" class="opacity-90 hover:text-accent transition-colors duration-300">Aromas Disponibles</a></li>
+                        <li><a href="#pagos" class="opacity-90 hover:text-accent transition-colors duration-300">Métodos de Pago</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 3 -->
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-6">Contacto</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-accent"></i>
+                            <span class="opacity-90">Calle Artesanal 123, Local 45<br>Centro Comercial Naturaleza</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-accent"></i>
+                            <span class="opacity-90">+57 300 123 4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-accent"></i>
+                            <span class="opacity-90">info@jaboneskarla.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 4 -->
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-6">Horario de Atención</h3>
+                    <ul class="space-y-3 opacity-90">
+                        <li class="flex justify-between">
+                            <span>Lunes a Viernes:</span>
+                            <span>9:00 AM - 7:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Sábados:</span>
+                            <span>10:00 AM - 5:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Domingos:</span>
+                            <span>11:00 AM - 3:00 PM</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6">
+                        <h4 class="font-bold mb-3">Suscríbete a nuestro newsletter</h4>
+                        <div class="flex">
+                            <input type="email" placeholder="Tu correo" class="flex-grow py-2 px-4 rounded-l-full text-gray-800">
+                            <button class="bg-secondary hover:bg-pink-600 py-2 px-4 rounded-r-full transition-colors duration-300">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 pt-8 text-center">
+                <p class="opacity-90">&copy; 2023 Jabones Karla. Todos los derechos reservados. | Jabones artesanales hechos con amor</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/573001234567" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 z-40">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        // Smooth scroll para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Menú móvil simple
+        document.querySelector('.fa-bars').addEventListener('click', function() {
+            alert('Menú móvil: En una implementación completa, aquí se desplegaría un menú responsive.');
+        });
+    </script>
+</body>
+</html>

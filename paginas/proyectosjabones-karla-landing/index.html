@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabones Karla - Jabones Artesanales Naturales</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-cream': '#F5F1EB',
+                        'brand-primary': '#8E44AD',
+                        'brand-secondary': '#2ECC71',
+                        'brand-border': '#D2B48C',
+                        'brand-text': '#4A3B2F',
+                        'brand-button': '#A569BD',
+                    },
+                    fontFamily: {
+                        'serif': ['Cormorant Garamond', 'serif'],
+                        'sans': ['DM Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glassmorphism {
+            background: rgba(245, 241, 235, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .carousel-container {
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+        }
+        .carousel-container::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-brand-text font-sans">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glassmorphism border-b border-brand-border/30">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-center items-center">
+                <div class="text-center">
+                    <h1 class="text-3xl font-serif font-bold text-brand-primary">Jabones Karla</h1>
+                    <p class="text-sm text-brand-text/70 mt-1">Artesanía Natural desde 2018</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-16">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
+                 alt="Jabones artesanales naturales" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/30"></div>
+        </div>
+        
+        <div class="relative z-10 container mx-auto px-4 text-center">
+            <h2 class="text-5xl md:text-7xl font-serif font-bold text-white mb-6">
+                Naturaleza en Cada <span class="text-brand-secondary">Espuma</span>
+            </h2>
+            <p class="text-xl md:text-2xl text-white/90 mb-10 max-w-3xl mx-auto font-light">
+                Descubre la esencia pura de la naturaleza con nuestros jabones artesanales, 
+                elaborados con ingredientes 100% naturales y amor por el cuidado de tu piel.
+            </p>
+            <button class="bg-brand-button hover:bg-brand-primary text-white font-semibold py-4 px-10 rounded-full 
+                          text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg">
+                Descubrir Colección
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección Historia -->
+    <section class="py-20 bg-white/50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-4xl font-serif font-bold text-brand-text mb-8">
+                        Nuestra <span class="text-brand-primary">Esencia</span>
+                    </h3>
+                    <div class="space-y-6 text-lg text-brand-text/80">
+                        <p>
+                            Desde 2018, en Jabones Karla hemos dedicado cada día a perfeccionar el arte 
+                            de la jabonería natural. Nuestra filosofía se basa en el respeto por la 
+                            naturaleza y el bienestar de tu piel.
+                        </p>
+                        <p>
+                            Cada jabón es una obra maestra elaborada a mano, utilizando solo ingredientes 
+                            de origen natural: aceites esenciales puros, mantecas vegetales orgánicas y 
+                            extractos botánicos cuidadosamente seleccionados.
+                        </p>
+                        <p>
+                            Nuestro proceso de curación tradicional de 4 semanas garantiza una barra 
+                            duradera, suave y llena de propiedades beneficiosas para todo tipo de piel.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Proceso artesanal de jabones" 
+                             class="w-full h-[500px] object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-brand-secondary text-white px-6 py-3 rounded-full">
+                        <span class="font-semibold">100% Natural</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Productos -->
+    <section class="py-20 bg-brand-cream">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-serif font-bold text-center text-brand-text mb-16">
+                Nuestros <span class="text-brand-primary">Favoritos</span>
+            </h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 
+                          transition-all duration-300 overflow-hidden border border-brand-border/20">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Jabón de Lavanda" 
+                             class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-brand-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                Orgánico
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-serif font-bold text-brand-text mb-2">Lavanda Calmante</h4>
+                        <p class="text-brand-text/70 mb-4">
+                            Perfecto para relajarte después de un largo día. Con aceite esencial de lavanda 
+                            pura y propiedades calmantes para la piel.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-brand-primary">$12.900</span>
+                            <button class="bg-brand-button hover:bg-brand-primary text-white px-6 py-2 
+                                         rounded-full transition-all duration-300 hover:scale-105">
+                                Agregar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 
+                          transition-all duration-300 overflow-hidden border border-brand-border/20">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Jabón de Eucalipto" 
+                             class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-brand-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                Orgánico
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-serif font-bold text-brand-text mb-2">Eucalipto Revitalizante</h4>
+                        <p class="text-brand-text/70 mb-4">
+                            Ideal para despertar tus sentidos. Con propiedades descongestionantes y 
+                            un aroma fresco que energiza.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-brand-primary">$11.900</span>
+                            <button class="bg-brand-button hover:bg-brand-primary text-white px-6 py-2 
+                                         rounded-full transition-all duration-300 hover:scale-105">
+                                Agregar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 
+                          transition-all duration-300 overflow-hidden border border-brand-border/20">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Jabón de Cítricos" 
+                             class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-brand-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                Orgánico
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-serif font-bold text-brand-text mb-2">Cítricos Energéticos</h4>
+                        <p class="text-brand-text/70 mb-4">
+                            Combinación de naranja, limón y pomelo. Perfecto para comenzar el día con 
+                            energía y vitalidad.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-brand-primary">$10.900</span>
+                            <button class="bg-brand-button hover:bg-brand-primary text-white px-6 py-2 
+                                         rounded-full transition-all duration-300 hover:scale-105">
+                                Agregar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Aromas -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-serif font-bold text-center text-brand-text mb-16">
+                Nuestra <span class="text-brand-primary">Familia</span> de Aromas
+            </h3>
+            
+            <div class="relative">
+                <div class="carousel-container flex overflow-x-auto gap-6 pb-8">
+                    <!-- Aroma 1 -->
+                    <div class="flex-shrink-0 w-64 bg-brand-cream rounded-2xl p-6 border border-brand-border/30 
+                              hover:shadow-xl transition-all duration-300">
+                        <div class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center mb-4">
+                            <span class="text-2xl">🌸</span>
+                        </div>
+                        <h4 class="text-xl font-serif font-bold text-brand-text mb-2">Lavanda</h4>
+                        <p class="text-brand-text/70 text-sm mb-4">
+                            Calma y relajación profunda. Perfecto para momentos de tranquilidad.
+                        </p>
+                        <span class="text-brand-primary font-semibold">Más popular</span>
+                    </div>
+
+                    <!-- Aroma 2 -->
+                    <div class="flex-shrink-0 w-64 bg-brand-cream rounded-2xl p-6 border border-brand-border/30 
+                              hover:shadow-xl transition-all duration-300">
+                        <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-4">
+                            <span class="text-2xl">🌿</span>
+                        </div>
+                        <h4 class="text-xl font-serif font-bold text-brand-text mb-2">Eucalipto</h4>
+                        <p class="text-brand-text/70 text-sm mb-4">
+                            Frescura y claridad mental. Ideal para despejar y revitalizar.
+                        </p>
+                        <span class="text-brand-primary font-semibold">Descuento 15%</span>
+                    </div>
+
+                    <!-- Aroma 3 -->
+                    <div class="flex-shrink-0 w-64 bg-brand-cream rounded-2xl p-6 border border-brand-border/30 
+                              hover:shadow-xl transition-all duration-300">
+                        <div class="w-16 h-16 rounded-full bg-yellow-100 flex items-center justify-center mb-4">
+                            <span class="text-2xl">🍊</span>
+                        </div>
+                        <h4 class="text-xl font-serif font-bold text-brand-text mb-2">Cítricos</h4>
+                        <p class="text-brand-text/70 text-sm mb-4">
+                            Energía y vitalidad. Comienza tu día con alegría y frescura.
+                        </p>
+                        <span class="text-brand-primary font-semibold">Nuevo</span>
+                    </div>
+
+                    <!-- Aroma 4 -->
+                    <div class="flex-shrink-0 w-64 bg-brand-cream rounded-2xl p-6 border border-brand-border/30 
+                              hover:shadow-xl transition-all duration-300">
+                        <div class="w-16 h-16 rounded-full bg-pink-100 flex items-center justify-center mb-4">
+                            <span class="text-2xl">🌹</span>
+                        </div>
+                        <h4 class="text-xl font-serif font-bold text-brand-text mb-2">Rosa</h4>
+                        <p class="text-brand-text/70 text-sm mb-4">
+                            Suavidad y cuidado intensivo. Para pieles delicadas y sensibles.
+                        </p>
+                        <span class="text-brand-primary font-semibold">Edición Limitada</span>
+                    </div>
+
+                    <!-- Aroma 5 -->
+                    <div class="flex-shrink-0 w-64 bg-brand-cream rounded-2xl p-6 border border-brand-border/30 
+                              hover:shadow-xl transition-all duration-300">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+                            <span class="text-2xl">🌊</span>
+                        </div>
+                        <h4 class="text-xl font-serif font-bold text-brand-text mb-2">Marino</h4>
+                        <p class="text-brand-text/70 text-sm mb-4">
+                            Frescura oceánica y minerales. Revitaliza y tonifica la piel.
+                        </p>
+                        <span class="text-brand-primary font-semibold">Exclusivo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-brand-border/30 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-center md:text-left">
+                    <h4 class="text-2xl font-serif font-bold text-brand-primary mb-4">Jabones Karla</h4>
+                    <p class="text-brand-text/70">
+                        Artesanía natural con amor y dedicación<br>
+                        Bogotá, Colombia
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <h5 class="font-semibold text-brand-text mb-4">Métodos de Pago</h5>
+                    <div class="flex gap-6 justify-center mb-6">
+                        <div class="w-12 h-8 bg-gray-100 rounded flex items-center justify-center">
+                            <span class="font-bold text-gray-700">VISA</span>
+                        </div>
+                        <div class="w-12 h-8 bg-gray-100 rounded flex items-center justify-center">
+                            <span class="font-bold text-gray-700">MC</span>
+                        </div>
+                        <div class="w-12 h-8 bg-gray-100 rounded flex items-center justify-center">
+                            <span class="text-sm font-semibold text-gray-700">TRF</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <h5 class="font-semibold text-brand-text mb-4">Síguenos</h5>
+                    <div class="flex gap-6 justify-center">
+                        <a href="#" class="w-12 h-12 bg-brand-cream rounded-full flex items-center justify-center 
+                                         hover:bg-brand-primary hover:text-white transition-all duration-300">
+                            <span class="text-xl">📷</span>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-brand-cream rounded-full flex items-center justify-center 
+                                         hover:bg-brand-primary hover:text-white transition-all duration-300">
+                            <span class="text-xl">f</span>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-brand-cream rounded-full flex items-center justify-center 
+                                         hover:bg-brand-primary hover:text-white transition-all duration-300">
+                            <span class="text-xl">💬</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-brand-border/20 text-center text-brand-text/60 text-sm">
+                <p>© 2024 Jabones Karla. Todos los derechos reservados. | Jabones 100% artesanales y naturales</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple carousel navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.querySelector('.carousel-container');
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            carousel.addEventListener('mousedown', (e) => {
+                isDown = true;
+                startX = e.pageX - carousel.offsetLeft;
+                scrollLeft = carousel.scrollLeft;
+            });
+
+            carousel.addEventListener('mouseleave', () => {
+                isDown = false;
+            });
+
+            carousel.addEventListener('mouseup', () => {
+                isDown = false;
+            });
+
+            carousel.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - carousel.offsetLeft;
+                const walk = (x - startX) * 2;
+                carousel.scrollLeft = scrollLeft - walk;
+            });
+        });
+    </script>
+</body>
+</html>
