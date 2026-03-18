@@ -1,0 +1,3 @@
+/* Estilos base - sistema-restaurante */
+:root { --primary: #2563eb; --bg: #f8fafc; }
+body { font-family: system-ui; margin: 0; }
