@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | Churrería La Tradición</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            font-family: 'DM Sans', sans-serif;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+    </style>
+</head>
+<body class="bg-amber-50 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-utensils text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-serif font-bold text-amber-900">Churrería La Tradición</span>
+                </a>
+                <a href="index.html" class="px-4 py-2 border border-amber-600 text-amber-700 rounded-lg hover:bg-amber-50 transition-all duration-300">
+                    Volver al Inicio
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-md mx-auto">
+                <div class="text-center mb-10">
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-amber-900 mb-4">Iniciar Sesión</h1>
+                    <p class="text-gray-600">Accede a tu cuenta para gestionar pedidos, reservas y disfrutar de ofertas exclusivas.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <form id="loginForm" class="space-y-6">
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Correo Electrónico</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <i class="fas fa-envelope text-gray-400"></i>
+                                </div>
+                                <input type="email" id="email" name="email" required 
+                                       class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all duration-300"
+                                       placeholder="tucorreo@ejemplo.com">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="password" class="block text-gray-700 font-medium mb-2">Contraseña</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <i class="fas fa-lock text-gray-400"></i>
+                                </div>
+                                <input type="password" id="password" name="password" required 
+                                       class="w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all duration-300"
+                                       placeholder="••••••••">
+                                <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                                    <i class="fas fa-eye text-gray-400 hover:text-gray-600"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <input type="checkbox" id="remember" name="remember" class="h-4 w-4 text-amber-600 focus:ring-amber-500 border-gray-300 rounded">
+                                <label for="remember" class="ml-2 text-gray-700">Recordarme</label>
+                            </div>
+                            <a href="#" class="text-amber-700 hover:text-amber-800 font-medium transition-colors">¿Olvidaste tu contraseña?</a>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full py-3 bg-amber-600 text-white font-medium rounded-lg hover:bg-amber-700 transition-all duration-300 hover:scale-[1.02] shadow-lg">
+                            Iniciar Sesión
+                        </button>
+                        
+                        <div class="text-center">
+                            <p class="text-gray-600">¿No tienes una cuenta? <a href="#" class="text-amber-700 hover:text-amber-800 font-medium transition-colors">Regístrate aquí</a></p>
+                        </div>
+                    </form>
+                    
+                    <div class="mt-8 pt-8 border-t border-gray-200">
+                        <p class="text-center text-gray-600 mb-4">O inicia sesión con</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <button class="py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300 flex items-center justify-center space-x-2">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </button>
+                            <button class="py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-all duration-300 flex items-center justify-center space-x-2">
+                                <i class="fab fa-google"></i>
+                                <span>Google</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600">¿Eres cliente VIP? <a href="vip.html" class="text-amber-700 hover:text-amber-800 font-medium transition-colors">Accede al área exclusiva</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-amber-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 Churrería La Tradición. Todos los derechos reservados.</p>
+            <p class="mt-2 text-amber-300">
+                <a href="index.html" class="hover:text-white transition-colors">Inicio</a> | 
+                <a href="login.html" class="hover:text-white transition-colors">Login</a> | 
+                <a href="vip.html" class="hover:text-white transition-colors">Área VIP</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('togglePassword').addEventListener('click', function() {
+            const passwordInput = document.getElementById('password');
+            const icon = this.querySelector('i');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        });
+
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Simulación de login exitoso
+            alert('¡Inicio de sesión exitoso! Redirigiendo...');
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

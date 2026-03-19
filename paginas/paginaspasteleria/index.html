@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Tentación | Pastelería Artesanal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Cormorant Garamond', serif;
+        }
+    </style>
+</head>
+<body class="bg-amber-50 text-gray-800">
+    <!-- Header y Navegación -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-birthday-cake text-2xl text-amber-600"></i>
+                    <h1 class="text-2xl font-bold text-gray-900">Dulce Tentación</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-amber-600 transition-colors duration-300 font-medium">Inicio</a>
+                    <a href="#especialidades" class="text-gray-700 hover:text-amber-600 transition-colors duration-300 font-medium">Especialidades</a>
+                    <a href="#nosotros" class="text-gray-700 hover:text-amber-600 transition-colors duration-300 font-medium">Nosotros</a>
+                    <a href="#contacto" class="text-gray-700 hover:text-amber-600 transition-colors duration-300 font-medium">Contacto</a>
+                </div>
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
+            <h2 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Arte en cada bocado</h2>
+            <p class="text-xl md:text-2xl mb-10 font-light">Pastelería artesanal hecha con ingredientes de la más alta calidad y mucho amor</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#especialidades" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">Ver especialidades</a>
+                <a href="#contacto" class="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105 border border-white/30">Hacer pedido</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especialidades -->
+    <section id="especialidades" class="py-20 px-6">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Nuestras Especialidades</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Descubre nuestra selección de pasteles y postres elaborados con técnicas tradicionales y un toque de innovación.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1089&q=80" alt="Tarta de chocolate" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-gray-900">Tarta Selva Negra</h3>
+                            <span class="text-amber-600 font-bold text-xl">$28</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Capas de bizcocho de chocolate, crema de cerezas, chocolate belga y decoración con virutas de chocolate.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500"><i class="fas fa-clock mr-2"></i>24h de anticipación</span>
+                            <button class="bg-amber-100 hover:bg-amber-200 text-amber-800 px-5 py-2 rounded-full font-medium transition-all duration-300 hover:scale-105">Pedir ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt="Macarons" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-gray-900">Macarons Franceses</h3>
+                            <span class="text-amber-600 font-bold text-xl">$24/6 uds</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Delicados macarons con rellenos de frambuesa, pistacho, chocolate, vainilla, limón y café. Auténtica receta francesa.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500"><i class="fas fa-clock mr-2"></i>48h de anticipación</span>
+                            <button class="bg-amber-100 hover:bg-amber-200 text-amber-800 px-5 py-2 rounded-full font-medium transition-all duration-300 hover:scale-105">Pedir ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559620192-032c64bc86af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1069&q=80" alt="Tarta de zanahoria" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-gray-900">Tarta de Zanahoria</h3>
+                            <span class="text-amber-600 font-bold text-xl">$22</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Bizcocho esponjoso de zanahoria con nueces, especias y cubierto con frosting de queso crema y decoración de nueces caramelizadas.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500"><i class="fas fa-clock mr-2"></i>24h de anticipación</span>
+                            <button class="bg-amber-100 hover:bg-amber-200 text-amber-800 px-5 py-2 rounded-full font-medium transition-all duration-300 hover:scale-105">Pedir ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519861531473-920034658307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1031&q=80" alt="Croissants" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-gray-900">Croissants Artesanales</h3>
+                            <span class="text-amber-600 font-bold text-xl">$18/4 uds</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Croissants de mantequilla pura, hojaldrados y dorados al punto perfecto. Disponibles también de chocolate y almendra.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500"><i class="fas fa-clock mr-2"></i>Pedido del día</span>
+                            <button class="bg-amber-100 hover:bg-amber-200 text-amber-800 px-5 py-2 rounded-full font-medium transition-all duration-300 hover:scale-105">Pedir ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Cupcakes" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-gray-900">Cupcakes Gourmet</h3>
+                            <span class="text-amber-600 font-bold text-xl">$30/12 uds</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Variedad de cupcakes con decoración creativa: red velvet, chocolate con menta, limón con merengue y fresa con crema.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500"><i class="fas fa-clock mr-2"></i>48h de anticipación</span>
+                            <button class="bg-amber-100 hover:bg-amber-200 text-amber-800 px-5 py-2 rounded-full font-medium transition-all duration-300 hover:scale-105">Pedir ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1623334044303-241021148842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Tarta de frutas" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-gray-900">Tarta de Frutas Frescas</h3>
+                            <span class="text-amber-600 font-bold text-xl">$26</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Base de crema pastelera, frutas de temporada seleccionadas y glaseado brillante. Un clásico renovado con frutas frescas.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500"><i class="fas fa-clock mr-2"></i>24h de anticipación</span>
+                            <button class="bg-amber-100 hover:bg-amber-200 text-amber-800 px-5 py-2 rounded-full font-medium transition-all duration-300 hover:scale-105">Pedir ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="py-20 px-6 bg-amber-100/30">
+        <div class="container mx-auto">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Pastelera trabajando" class="rounded-2xl shadow-2xl w-full">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8">Nuestra Historia</h2>
+                    <p class="text-lg text-gray-700 mb-6">Desde 1998, Dulce Tentación ha sido un referente en pastelería artesanal en la ciudad. Fundada por la pastelera María González, nuestra filosofía se basa en tres pilares fundamentales:</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-amber-600 text-xl mr-3 mt-1"></i>
+                            <span class="text-gray-700">Ingredientes de máxima calidad, seleccionados cuidadosamente de proveedores locales.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-amber-600 text-xl mr-3 mt-1"></i>
+                            <span class="text-gray-700">Técnicas tradicionales combinadas con innovación para crear sabores únicos.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-amber-600 text-xl mr-3 mt-1"></i>
+                            <span class="text-gray-700">Atención personalizada para cada cliente, adaptándonos a sus necesidades y celebraciones.</span>
+                        </li>
+                    </ul>
+                    <div class="flex items-center">
+                        <div class="mr-6">
+                            <div class="text-3xl font-bold text-amber-700">25+</div>
+                            <div class="text-gray-600">Años de experiencia</div>
+                        </div>
+                        <div class="mr-6">
+                            <div class="text-3xl font-bold text-amber-700">50+</div>
+                            <div class="text-gray-600">Tipos de postres</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-amber-700">10k+</div>
+                            <div class="text-gray-600">Clientes satisfechos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="bg-gray-900 text-white py-16 px-6">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <i class="fas fa-birthday-cake text-3xl text-amber-400"></i>
+                        <h3 class="text-2xl font-bold">Dulce Tentación</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6">Creando momentos dulces desde 1998. Pastelería artesanal con el sabor de lo hecho a mano.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-800 hover:bg-amber-600 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-amber-600 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-amber-600 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Horario de atención</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex justify-between">
+                            <span>Lunes a Viernes</span>
+                            <span>8:00 - 20:00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Sábados</span>
+                            <span>9:00 - 22:00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Domingos</span>
+                            <span>10:00 - 18:00</span>
+                        </li>
+                    </ul>
+                    <div class="mt-8 p-4 bg-gray-800/50 rounded-xl">
+                        <p class="text-amber-300 font-medium">¡Pedidos para eventos con 72h de anticipación!</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Contacto</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-amber-400 mr-3 mt-1"></i>
+                            <span>Calle Dulce 123, Colonia Postres<br>Ciudad Delicias, CP 28000</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-amber-400 mr-3"></i>
+                            <span>+52 55 1234 5678</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-amber-400 mr-3"></i>
+                            <span>hola@dulcetentacion.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Suscríbete</h4>
+                    <p class="text-gray-400 mb-4">Recibe nuestras novedades, promociones y recetas exclusivas.</p>
+                    <form class="space-y-4">
+                        <input type="email" placeholder="Tu correo electrónico" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-amber-500">
+                        <button type="submit" class="bg-amber-600 hover:bg-amber-700 w-full py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105">Suscribirme</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 Dulce Tentación Pastelería. Todos los derechos reservados.</p>
+                <p class="mt-2">Diseñado con <i class="fas fa-heart text-red-500 mx-1"></i> para los amantes de la buena pastelería.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante WhatsApp -->
+    <a href="https://wa.me/525512345678" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 z-40">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        // Smooth scroll para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Efecto hover para cards
+        document.querySelectorAll('.transition-all').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>

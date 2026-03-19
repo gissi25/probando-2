@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Páginas Web | Prueba de Carga</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Cormorant Garamond', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Hero Section -->
+    <section class="relative min-h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80')">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Verificador de Páginas Web</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto font-light">Prueba la carga de tu sitio web local y verifica su rendimiento visual en tiempo real</p>
+            <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 md:p-10 mb-10 max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-6">Tarea Actual</h2>
+                <div class="bg-gray-900 rounded-xl p-6 text-left mb-6">
+                    <code class="text-lg md:text-xl text-green-300 font-mono break-all">http://localhost:3000/static/paginas/solo-html-css-en/index.html</code>
+                </div>
+                <p class="text-lg mb-8">Toma screenshots y verifica si la página carga correctamente en diferentes dispositivos y navegadores.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#instrucciones" class="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">Ver Instrucciones</a>
+                    <a href="#herramientas" class="bg-gray-800 hover:bg-gray-900 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">Herramientas</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-0 right-0 text-center">
+            <a href="#instrucciones" class="text-white text-3xl animate-bounce"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Instrucciones Section -->
+    <section id="instrucciones" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Instrucciones Paso a Paso</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Sigue estos pasos para probar la página web local y verificar su correcta carga</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <span class="text-2xl font-bold text-blue-600">1</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Inicia el Servidor Local</h3>
+                <p class="text-gray-600">Asegúrate de que tu servidor local esté ejecutándose en el puerto 3000. Verifica que la URL <code class="bg-gray-100 px-2 py-1 rounded">localhost:3000</code> sea accesible desde tu navegador.</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <span class="text-2xl font-bold text-green-600">2</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Accede a la Página</h3>
+                <p class="text-gray-600">Navega a la dirección exacta: <code class="bg-gray-100 px-2 py-1 rounded break-all">http://localhost:3000/static/paginas/solo-html-css-en/index.html</code> en tu navegador principal.</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <span class="text-2xl font-bold text-purple-600">3</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Toma Screenshots</h3>
+                <p class="text-gray-600">Captura imágenes de la página completa y de secciones específicas. Usa herramientas nativas del navegador o aplicaciones especializadas.</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <span class="text-2xl font-bold text-amber-600">4</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Verifica la Carga</h3>
+                <p class="text-gray-600">Comprueba que todos los elementos se carguen correctamente: imágenes, estilos CSS, fuentes y cualquier recurso externo.</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <span class="text-2xl font-bold text-red-600">5</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Prueba Responsive</h3>
+                <p class="text-gray-600">Usa las herramientas de desarrollador del navegador para probar la página en diferentes tamaños de pantalla (móvil, tablet, escritorio).</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <span class="text-2xl font-bold text-indigo-600">6</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Documenta Resultados</h3>
+                <p class="text-gray-600">Registra cualquier problema encontrado: errores de carga, elementos rotos, problemas de diseño o de rendimiento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Herramientas Section -->
+    <section id="herramientas" class="py-20 bg-gray-100 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Herramientas Recomendadas</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Utiliza estas herramientas para realizar pruebas exhaustivas de carga y rendimiento</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Herramientas de Navegador</h3>
+                        <p class="text-gray-600 mb-4">Usa las DevTools integradas en Chrome, Firefox o Edge para inspeccionar elementos y probar responsive.</p>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full">Nativo</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Lightshot</h3>
+                        <p class="text-gray-600 mb-4">Herramienta ligera para capturas de pantalla rápidas con opciones de anotación y edición básica.</p>
+                        <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">Gratuita</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">PageSpeed Insights</h3>
+                        <p class="text-gray-600 mb-4">Analiza el rendimiento de carga y obtén sugerencias para optimizar la velocidad de tu página.</p>
+                        <span class="inline-block bg-purple-100 text-purple-800 text-sm font-semibold px-3 py-1 rounded-full">Google</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">BrowserStack</h3>
+                        <p class="text-gray-600 mb-4">Prueba tu página en múltiples navegadores y dispositivos reales desde la nube.</p>
+                        <span class="inline-block bg-red-100 text-red-800 text-sm font-semibold px-3 py-1 rounded-full">Premium</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checklist Section -->
+    <section class="py-20 px-4 max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Checklist de Verificación</h2>
+            <p class="text-xl text-gray-600">Elementos clave a verificar durante la prueba de carga</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+            <div class="space-y-6">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                        <div class="w-6 h-6 rounded-full border-2 border-gray-300 flex items-center justify-center">
+                            <div class="w-3 h-3 rounded-full bg-green-500 hidden"></div>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold">La página carga completamente</h3>
+                        <p class="text-gray-600">Todos los recursos (HTML, CSS, imágenes) se descargan sin errores.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                        <div class="w-6 h-6 rounded-full border-2 border-gray-300 flex items-center justify-center">
+                            <div class="w-3 h-3 rounded-full bg-green-500 hidden"></div>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold">Los estilos CSS se aplican correctamente</h3>
+                        <p class="text-gray-600">La página mantiene su diseño visual sin elementos desalineados o sin estilo.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                        <div class="w-6 h-6 rounded-full border-2 border-gray-300 flex items-center justify-center">
+                            <div class="w-3 h-3 rounded-full bg-green-500 hidden"></div>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold">Las imágenes se muestran adecuadamente</h3>
+                        <p class="text-gray-600">Todas las imágenes aparecen en su tamaño y posición correctos, sin pixeleo.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                        <div class="w-6 h-6 rounded-full border-2 border-gray-300 flex items-center justify-center">
+                            <div class="w-3 h-3 rounded-full bg-green-500 hidden"></div>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold">Diseño responsive funcional</h3>
+                        <p class="text-gray-600">La página se adapta correctamente a diferentes tamaños de pantalla.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                        <div class="w-6 h-6 rounded-full border-2 border-gray-300 flex items-center justify-center">
+                            <div class="w-3 h-3 rounded-full bg-green-500 hidden"></div>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold">Sin errores en la consola</h3>
+                        <p class="text-gray-600">La consola de desarrollador no muestra errores JavaScript o de recursos.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                        <div class="w-6 h-6 rounded-full border-2 border-gray-300 flex items-center justify-center">
+                            <div class="w-3 h-3 rounded-full bg-green-500 hidden"></div>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold">Tiempo de carga aceptable</h3>
+                        <p class="text-gray-600">La página carga en menos de 3 segundos en conexiones promedio.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-10 pt-8 border-t border-gray-200">
+                <h3 class="text-xl font-bold mb-4">Resultado de la Prueba</h3>
+                <div class="flex flex-wrap gap-4">
+                    <button class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 hover:scale-105">✓ Página Carga Correctamente</button>
+                    <button class="bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 hover:scale-105">✗ Problemas Detectados</button>
+                    <button class="bg-gray-800 hover:bg-gray-900 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 hover:scale-105">Necesita Más Pruebas</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Verificador Web</h3>
+                    <p class="text-gray-400">Herramienta para probar y verificar el correcto funcionamiento de páginas web en entornos de desarrollo local.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Contacto</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>soporte@verificadorweb.com</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span>+34 912 345 678</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            <span>Madrid, España</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Recursos Útiles</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentación de Pruebas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Guía de Herramientas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Plantillas de Reporte</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Foro de Soporte</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-10 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 Verificador Web. Todos los derechos reservados. | Diseñado para pruebas de desarrollo web</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple interactivity for checklist
+        document.querySelectorAll('.flex.items-start').forEach(item => {
+            item.addEventListener('click', function() {
+                const checkmark = this.querySelector('.w-3.h-3');
+                checkmark.classList.toggle('hidden');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

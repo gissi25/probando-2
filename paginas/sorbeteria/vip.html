@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crea una pagina estatica para</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>tailwind.config = { theme: { extend: { fontFamily: { serif: ['Cormorant Garamond'], sans: ['DM Sans'] } } } }</script>
+</head>
+<body class="font-sans text-slate-800 antialiased">
+  <header class="relative min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?w=1920')">
+    <div class="absolute inset-0 bg-slate-900/60"></div>
+    <div class="relative z-10 text-center px-6">
+      <h1 class="font-serif text-5xl md:text-7xl font-bold text-white mb-4">Crea una pagina estatica para</h1>
+      <p class="text-xl text-white/90 max-w-xl mx-auto">Bienvenido a Crea una pagina estatica para. Descubre lo que tenemos para ofrecerte.</p>
+    </div>
+  </header>
+  <section class="py-20 px-6 bg-slate-50">
+    <h2 class="font-serif text-3xl font-bold text-center text-slate-800 mb-12">Destacados</h2>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <article class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+        <img src="https://images.unsplash.com/photo-1557683316-973673baf926?w=400" alt="Producto 1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="font-serif text-xl font-semibold text-slate-800">Producto 1</h3>
+          <p class="text-slate-600 mt-2">Descripción del producto o servicio.</p>
+        </div>
+      </article>
+      
+      <article class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+        <img src="https://images.unsplash.com/photo-1557682250-8bd57f84282e?w=400" alt="Producto 2" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="font-serif text-xl font-semibold text-slate-800">Producto 2</h3>
+          <p class="text-slate-600 mt-2">Descripción del producto o servicio.</p>
+        </div>
+      </article>
+      
+      <article class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+        <img src="https://images.unsplash.com/photo-1557682224-5b8590e9b412?w=400" alt="Producto 3" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="font-serif text-xl font-semibold text-slate-800">Producto 3</h3>
+          <p class="text-slate-600 mt-2">Descripción del producto o servicio.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <footer class="bg-slate-900 text-slate-100 py-12 px-6 text-center">
+    <p class="font-serif text-xl">Crea una pagina estatica para</p>
+    <p class="mt-2 text-slate-300">Calle Principal 123 · Contacto disponible</p>
+  </footer>
+</body>
+</html>
